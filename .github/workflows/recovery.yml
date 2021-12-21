@@ -22,6 +22,7 @@ env:
   KERNEL_PATH: kernel/xiaomi/alioth
   TARGET: bootimage
   TZ: Asia/Kuching
+  BOTTOKEN: ${{ secrets.bottoken }}
   PREFIX: twrp
 
 jobs:
