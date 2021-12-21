@@ -16,10 +16,10 @@ on:
 env:
   MANIFEST: git://github.com/SHRP/manifest.git -b v3_11.0
   DEVICE: alioth
-  DT_LINK: https://github.com/aswin11234/device-samsung-a70q
+  DT_LINK: https://github.com/Aswinbuilds/device_xiaomi_alioth-TWRP
   DT_PATH: device/xiaomi/alioth
-  KERNEL_LINK: https://github.com/Haky86/android_kernel_samsung_sm6150
-  KERNEL_PATH: kernel/alioth/alioth
+  KERNEL_LINK: https://github.com/Aswinbuilds/android_kernel_xiaomi_alioth
+  KERNEL_PATH: kernel/xiaomi/alioth
   TARGET: bootimage
   TZ: Asia/Kuching
   PREFIX: twrp
