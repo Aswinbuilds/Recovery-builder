@@ -16,7 +16,7 @@ on:
 env:
   MANIFEST: git://github.com/SHRP/manifest.git -b v3_11.0
   DEVICE: alioth
-  DT_LINK: https://github.com/Aswinbuilds/device_xiaomi_alioth-TWRP
+  DT_LINK: https://github.com/Aswinbuilds/android_device_xiaomi_alioth-ofox
   DT_PATH: device/xiaomi/alioth
   KERNEL_LINK: https://github.com/Aswinbuilds/android_kernel_xiaomi_alioth
   KERNEL_PATH: kernel/xiaomi/alioth
@@ -55,7 +55,7 @@ jobs:
              repo sync -c -j$(nproc --all) --force-sync --no-clone-bundle --no-tags
              git clone $DT_LINK --depth=1 --single-branch $DT_PATH
              git clone $KERNEL_LINK --depth=1 --single-branch $KERNEL_PATH
-             git clone https://github.com/Aswinbuilds/device_xiaomi_sm8250-common-TWRP device/xiaomi/sm8250-common
+             git clone https://github.com/Aswinbuilds/device_xiaomi_sm8250-common-TWRP --depth=1 --single-branch device/xiaomi/sm8250-common
 
        - name: Build
          run: |
